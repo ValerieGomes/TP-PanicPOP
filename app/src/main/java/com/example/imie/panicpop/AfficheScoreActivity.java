@@ -27,8 +27,8 @@ public class AfficheScoreActivity extends ListActivity {
                 "score"
         };
         int[] to = new int[] {
-                android.R.id.text1
-               // android.R.id.text2
+                android.R.id.text1,
+                android.R.id.text2
         };
         bdd.open(this);
         cListeScores = bdd.getInfos();

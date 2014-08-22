@@ -51,21 +51,20 @@ public class Dessin extends View implements OnTouchListener {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             // toucher en x,y
                 //cercles.add(new Cercle(x, y, 1));
-                Log.i("nb élément dans la liste ", String.valueOf(EnsembleCercles.getInstance().liste.size()));
+                Log.i ("nb élément dans la liste ", String.valueOf(EnsembleCercles.getInstance().liste.size()));
                 Cercle cercleASupprimer = null;
                 for (Cercle cercle : EnsembleCercles.getInstance().liste) {
-                    if ((x < cercle.xc + cercle.rayon) &&
-                            x > cercle.xc - cercle.rayon &&
-                            y < cercle.yc + cercle.rayon &&
-                            y > cercle.yc - cercle.rayon) {
+                    if ((x < cercle.posx + cercle.rayon) &&
+                            x > cercle.posx - cercle.rayon &&
+                            y < cercle.posy + cercle.rayon &&
+                            y > cercle.posy - cercle.rayon) {
                         cercleASupprimer = cercle;
-                        Log.i("Cercle supprimé x=","" );
                     }
                 }
                 if (cercleASupprimer != null) {
                     EnsembleCercles.getInstance().liste.remove(cercleASupprimer);
                     nbPoints++;
-                    Log.i("nb points", String.valueOf(nbPoints));
+                    Log.i ("nb points", String.valueOf(nbPoints));
                 }
         }
         //On va signaler à la vue que son contenu n'est plus à jour, elle va donc rappeler

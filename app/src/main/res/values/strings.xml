@@ -3,6 +3,8 @@
 
     <string name="app_name">PanicPOP</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="menu_settings">Paramètres</string>
+    <string name="menu_affiche_score">Affiche les scores</string>
+    <string name="menu_insere_score">Ajoute un score</string>
 
 </resources>
