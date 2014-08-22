@@ -16,7 +16,9 @@ public class Cercle {
         yc = y;
         rayon = r;
         paint = new Paint();
-        paint.setColor(Color.rgb((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256)));
+        //paint.setColor(Color.rgb((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256)));
+        //paint.setColor(Color.MAGENTA);
+        paint.setColor(Color.WHITE);
     }
 
     //Méthode pour dessiner un cercle dans le canvas

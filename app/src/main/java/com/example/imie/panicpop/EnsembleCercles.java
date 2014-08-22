@@ -7,7 +7,7 @@ import java.util.LinkedList;
  */
 public final class EnsembleCercles {
 
-    // L'utilisation du mot clé volatile (utilisable qu'à partir de Java version 5)
+    // L'utilisation du mot clé volatile (utilisable qu'à partir de Java 5)
     // permet d'éviter le cas où "Singleton.instance" est non-nul,
     // mais pas encore "réellement" instancié.
     private static volatile EnsembleCercles instance = null;
